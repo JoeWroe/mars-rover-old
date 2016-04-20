@@ -27,16 +27,16 @@ Assume that the square directly North from (x, y) is (x, y+1).
 
 **Input and Output**
 
-  **Test Input:**
-    5 5
-    1 2 N
-    LMLMLMLMM
-    3 3 E
-    MMRMMRMRRM
+**Test Input:**
+5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM
 
-  **Expected Output:**
-    1 3 N
-    5 1 E
+**Expected Output:**
+1 3 N
+5 1 E
 
 In the administration of our assessments, ThoughtWorks strives to provide an equal testing opportunity for all candidates. Therefore, we will provide reasonable adjustment to our standard test taking procedures for applicants who have a documented disability within the meaning of the Equality Act. Please let us know when we contact you to schedule the assessments if you require any reasonable adjustment to the standard test taking procedures.
 
@@ -89,7 +89,7 @@ We would like to be able to start and stop our camera from recording.
 ```
 As NASA,
 So that we can use the camera to get a good view of mars,
-We would like to be able to navigate it.
+We would like to be able to navigate the rover.
 ```
 
 ##Author
