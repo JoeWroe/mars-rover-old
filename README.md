@@ -73,9 +73,9 @@ We would like to interact with an online Mars Rover.
 
 **User Story 2**
 ```
-As NASA,
-So that we can explore a particular part of Mars,
-We would like to be able to land a Mars Rover.
+As a NASA controller,
+So that I can explore a particular part of Mars,
+I would like to be able to land a Mars Rover on the plateau.
 ```
 
 **User Story 3**
