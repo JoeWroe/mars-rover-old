@@ -74,25 +74,18 @@ We would like to interact with an online Mars Rover.
 **User Story 2**
 ```
 As NASA,
-So that we can explore Mars in multiple places at once,
-We would like to interact with multiple Rovers.
-```
-
-**User Story 3**
-```
-As NASA,
 So that we can explore a particular part of Mars,
 We would like to be able to land a Mars Rover.
 ```
 
-**User Story 4**
+**User Story 3**
 ```
 As NASA,
 So that we don't waste film,
 We would like to be able to start and stop our camera from recording.
 ```
 
-**User Story 5**
+**User Story 4**
 ```
 As NASA,
 So that we can use the camera to get a good view of mars,

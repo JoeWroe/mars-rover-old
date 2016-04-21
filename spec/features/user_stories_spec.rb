@@ -6,6 +6,6 @@ describe 'user stories' do
   it 'so a NASA controller can interact with a Mars Rover, check a Mars Rover is online' do
     controller = Controller.new
     mars_rover = MarsRover.new
-    expect { controller.online?(mars_rover) }.not_to raise_error
+    expect(controller.online?(mars_rover)).to eq(true)
   end
 end
