@@ -66,9 +66,9 @@ Based on the problem laid out above, in order to break down the challenge, a num
 
 **User Story 1**
 ```
-As NASA,
+As a NASA controller,
 So that we can explore Mars,
-We would like to interact with a Mars Rover.
+We would like to interact with an online Mars Rover.
 ```
 
 **User Story 2**
