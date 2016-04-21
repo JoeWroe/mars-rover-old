@@ -2,7 +2,9 @@ require 'controller'
 
 describe Controller do
 
+  subject(:controller) { described_class.new}
+
   it 'can question if an object is #online?' do
-    expect(subject).to respond_to(:online?).with(1).argument
+    expect(controller).to respond_to(:online?).with(1).argument
   end
 end
