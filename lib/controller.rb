@@ -6,4 +6,8 @@ class Controller
     mars_rover.online
   end
 
+  def land(vehicle, location)
+
+  end
+
 end

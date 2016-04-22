@@ -18,6 +18,6 @@ describe 'user stories' do
     mars_rover   = MarsRover.new
     mars_plateau = Plateau.new
     controller.land(mars_rover, mars_plateau)
-    expect(mars_plateau.mars_rovers).to_include(mars_rover)
+    expect(mars_plateau.currently_landed_vehicles).to eq([mars_rover])
   end
 end
