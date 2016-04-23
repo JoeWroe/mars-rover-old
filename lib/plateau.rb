@@ -1,7 +1,9 @@
 class Plateau
 
-  attr_reader :currently_landed_vehicles
+  attr_reader :number_of_landed_rovers
 
-  currently_landed_vehicles = []
+  def initialize
+    @number_of_landed_rovers = 0
+  end
 
 end
