@@ -1,13 +1,9 @@
-require_relative 'plateau'
-
 class MarsRover
 
-  def online
-    true
-  end
+  attr_reader :online, :landed
 
-  def landed
-    true
+  def initialize
+    @online = true
+    @landed = true
   end
-
 end
