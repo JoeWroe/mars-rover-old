@@ -12,6 +12,6 @@ describe Controller do
     mars_rover = MarsRover.new
     plateau    = Plateau.new
     controller.land(mars_rover, plateau)
-    expect(mars_rover.landed).to eq(true)
+    expect(mars_rover.landed(plateau)).to eq(true)
   end
 end

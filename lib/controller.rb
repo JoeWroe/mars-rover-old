@@ -7,7 +7,7 @@ class Controller
   end
 
   def land(vehicle, location)
-
+    vehicle.landed(location)
   end
 
 end
