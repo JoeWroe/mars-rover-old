@@ -40,4 +40,10 @@ describe Controller do
       expect(mars_rover.recording).to eq(false)
     end
   end
+
+  describe 'checking a vehicles position' do
+    it 'can question the position of an object' do
+      expect(controller).to respond_to(:vehicle_position).with(1).argument
+    end
+  end
 end

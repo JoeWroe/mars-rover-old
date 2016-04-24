@@ -14,4 +14,7 @@ class Controller
     vehicle.toggle_record
   end
 
+  def vehicle_position(vehicle)
+  end
+
 end

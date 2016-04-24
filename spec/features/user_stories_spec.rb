@@ -41,6 +41,6 @@ describe 'user stories' do
   it 'so a NASA controller can find out a rovers position, a rover can return its coordinates' do
     controller = Controller.new
     mars_rover = MarsRover.new
-    expect(controller.rover_position?(mars_rover)).to eq('0 0 N')
+    expect(controller.vehicle_position(mars_rover)).to eq('0 0 N')
   end
 end
