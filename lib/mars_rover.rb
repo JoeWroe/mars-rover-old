@@ -10,7 +10,13 @@ class MarsRover
   end
 
   def landed(location)
-    location.number_of_landed_rovers += 1
+    add_rover_to_location(location)
     @landed = true
+  end
+
+  private
+
+  def add_rover_to_location(location)
+    location.number_of_landed_rovers += 1
   end
 end
