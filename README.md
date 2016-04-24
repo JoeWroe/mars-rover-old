@@ -80,9 +80,9 @@ I would like to be able to land a Mars Rover on the plateau.
 
 **User Story 3**
 ```
-As NASA,
-So that we don't waste film,
-We would like to be able to start and stop our camera from recording.
+As a NASA controller,
+So that we can get a complete view of the surrounding terrain to send back to Earth,
+I would like to be able to start and stop our camera from recording.
 ```
 
 **User Story 4**

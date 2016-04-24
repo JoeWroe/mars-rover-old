@@ -14,4 +14,8 @@ describe Controller do
     controller.land(mars_rover, plateau)
     expect(mars_rover.landed(plateau)).to eq(true)
   end
+
+  it 'can respond to #toggle_recording' do
+    expect(controller).to respond_to(:toggle_recording).with(1).argument
+  end
 end

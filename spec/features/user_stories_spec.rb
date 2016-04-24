@@ -29,8 +29,8 @@ describe 'user stories' do
     controller = Controller.new
     mars_rover = MarsRover.new
     controller.toggle_recording(mars_rover)
-    expect(mars_rover.recording?).to eq(true)
+    expect(mars_rover.recording).to eq(true)
     controller.toggle_recording(mars_rover)
-    expect(mars_rover.recording?).to eq(false)
+    expect(mars_rover.recording).to eq(false)
   end
 end

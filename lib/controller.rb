@@ -10,4 +10,7 @@ class Controller
     vehicle.landed(location)
   end
 
+  def toggle_recording(vehicle)
+  end
+
 end
