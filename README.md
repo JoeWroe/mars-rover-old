@@ -89,9 +89,9 @@ I would like to be able to land a Mars Rover on the plateau.*
 
 Above each User Story is the sentence that has formed the basis for its development.
 
-####The Constructed User Stories
+####The constructed User Stories
 
-**User Story 1**
+**User Story 1:** 
 *This is basic functionality required - the controller must be able to communicate with the rover. No specific sentence has formed the basis of this User Story*
 ```
 As a NASA controller,
@@ -99,7 +99,7 @@ So that we can explore Mars,
 We would like to interact with an online Mars Rover.
 ```
 
-**User Story 2**
+**User Story 2:**
 *A squad of robotic rovers are to be landed by NASA on a plateau on Mars.*
 ```
 As a NASA controller,
@@ -107,7 +107,7 @@ So that I can explore a particular part of Mars,
 I would like to be able to land a Mars Rover on the plateau.
 ```
 
-**User Story 3**
+**User Story 3:**
 *This plateau, which is curiously rectangular, must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.*
 ```
 As a NASA controller,
@@ -115,7 +115,7 @@ So that we can get a complete view of the surrounding terrain to send back to Ea
 I would like to be able to start and stop our camera from recording.
 ```
 
-**User Story 4**
+**User Story 4:**
 *A rover’s position and location is represented by a combination of x and y co-ordinates and a letter representing one of the four cardinal compass points.*
 ```
 As a NASA controller,
