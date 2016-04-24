@@ -20,4 +20,17 @@ describe 'user stories' do
     controller.land(mars_rover, mars_plateau)
     expect(mars_plateau.number_of_landed_rovers).to eq(1)
   end
+
+  #USER STORY 3
+  # As a NASA controller,
+  # So that we can get a complete view of the surrounding terrain to send back to Earth,
+  # I would like to be able to start and stop our camera from recording.
+  it 'so a NASA controller can use the onboard camera, start and stop recording' do
+    controller = Controller.new
+    mars_rover = MarsRover.new
+    controller.toggle_recording(mars_rover)
+    expect(mars_rover.recording?).to eq(true)
+    controller.toggle_recording(mars_rover)
+    expect(mars_rover.recording?).to eq(false)
+  end
 end
