@@ -22,4 +22,11 @@ describe MarsRover do
       expect(mars_rover.recording).to eq(true)
     end
   end
+
+  describe 'position' do
+
+    it 'can return its current position' do
+      expect(mars_rover.current_position).to eq('0 0 N')
+    end
+  end
 end

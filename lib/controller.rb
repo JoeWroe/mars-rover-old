@@ -15,6 +15,7 @@ class Controller
   end
 
   def vehicle_position(vehicle)
+    vehicle.current_position
   end
 
 end
