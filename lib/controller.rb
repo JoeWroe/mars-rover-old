@@ -11,6 +11,7 @@ class Controller
   end
 
   def toggle_recording(vehicle)
+    vehicle.toggle_record
   end
 
 end
