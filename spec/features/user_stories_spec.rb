@@ -33,4 +33,14 @@ describe 'user stories' do
     controller.toggle_recording(mars_rover)
     expect(mars_rover.recording).to eq(false)
   end
+
+  #USER STORY 4
+  # As a NASA controller,
+  # So that I know the position and location of a rover,
+  # I would like to be able to check a rovers current position and location.
+  it 'so a NASA controller can find out a rovers position, a rover can return its coordinates' do
+    controller = Controller.new
+    mars_rover = MarsRover.new
+    expect(controller.rover_position?(mars_rover)).to eq('0 0 N')
+  end
 end
