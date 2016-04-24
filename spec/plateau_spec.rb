@@ -2,8 +2,9 @@ require 'plateau'
 
 describe Plateau do
 
+  subject(:plateau) { described_class.new }
+
   it 'can contain a vehicle' do
-    plateau      = Plateau.new
     controller   = Controller.new
     mars_rover   = MarsRover.new
     controller.land(mars_rover, plateau)
