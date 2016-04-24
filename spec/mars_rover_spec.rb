@@ -4,8 +4,11 @@ describe MarsRover do
 
   subject(:mars_rover) { described_class.new }
 
-  it 'responds with "true" when MarsRover is #online' do
-    expect(mars_rover.online).to eq(true)
+  describe 'state of #online' do
+
+    it 'responds with "true" when MarsRover is #online' do
+      expect(mars_rover.online).to eq(true)
+    end
   end
 
   describe 'camera' do
@@ -18,7 +21,5 @@ describe MarsRover do
       mars_rover.toggle_record
       expect(mars_rover.recording).to eq(true)
     end
-
   end
-
 end
