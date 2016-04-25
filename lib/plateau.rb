@@ -9,7 +9,22 @@ class Plateau
   end
 
   def grid_size
-    "Maximum point on x-axis is #{x_axis_max},\nmaximum point on y-axis is #{y_axis_max}."
+    "Maximum point on x-axis is #{x_axis_max}.\nMaximum point on y-axis is #{y_axis_max}."
+  end
+
+  def add_navigation_grid(x_axis_max, y_axis_max)
+    set_x_axis_max(x_axis_max)
+    set_y_axis_max(y_axis_max)
+  end
+
+  private
+
+  def set_x_axis_max(x_axis_max)
+    @x_axis_max = x_axis_max
+  end
+
+  def set_y_axis_max(y_axis_max)
+    @y_axis_max = y_axis_max
   end
 
 end

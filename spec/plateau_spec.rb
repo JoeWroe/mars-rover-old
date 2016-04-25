@@ -17,7 +17,7 @@ describe Plateau do
   describe 'navigational grid' do
 
     it 'returns a grid size' do
-      expect(plateau.grid_size).to eq("Maximum point on x-axis is ,\nmaximum point on y-axis is .")
+      expect(plateau.grid_size).to eq("Maximum point on x-axis is .\nMaximum point on y-axis is .")
     end
   end
 end

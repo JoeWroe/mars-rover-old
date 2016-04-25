@@ -52,6 +52,6 @@ describe 'user stories' do
     controller = Controller.new
     plateau    = Plateau.new
     controller.add_navigation_grid(plateau, 5, 5)
-    expect(controller.check_location_bounds(plateau)).to eq("Maximum point on x-axis is 5,\nmaximum point on y-axis is 5.")
+    expect(controller.check_location_bounds(plateau)).to eq("Maximum point on x-axis is 5.\nMaximum point on y-axis is 5.")
   end
 end

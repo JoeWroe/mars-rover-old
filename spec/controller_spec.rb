@@ -42,19 +42,23 @@ describe Controller do
   end
 
   describe 'checking a vehicles position' do
+
     it 'can question the position of an object' do
       expect(controller).to respond_to(:vehicle_position).with(1).argument
     end
   end
 
   describe 'managing a navigation grid for a plateau' do
-    it 'can respond to #add_navigation_grid' do
-      expect(controller).to respond_to(:add_navigation_grid).with(3).arguments
-    end
 
     it 'can check the maximum boundries of the grid' do
       plateau = Plateau.new
       expect(controller.check_location_bounds(plateau)).to eq(plateau.grid_size)
+    end
+
+    it 'can #add_navigation_grid' do
+      plateau = Plateau.new
+      controller.add_navigation_grid(plateau, 5, 5)
+      expect(controller.check_location_bounds(plateau)).to eq("Maximum point on x-axis is 5.\nMaximum point on y-axis is 5.")
     end
   end
 end
