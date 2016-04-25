@@ -91,7 +91,7 @@ Above each User Story is the sentence that has formed the basis for its developm
 
 ####The constructed User Stories
 
-**User Story 1:** 
+**User Story 1:**
 *This is basic functionality required - the controller must be able to communicate with the rover. No specific sentence has formed the basis of this User Story*
 ```
 As a NASA controller,
@@ -120,7 +120,15 @@ I would like to be able to start and stop our camera from recording.
 ```
 As a NASA controller,
 So that I know the position and location of a rover,
-I would like to be able to check a rovers current position and location.
+I'd like to be able to check a rovers current position and location.
+```
+
+**User Story 5:**
+*The plateau is divided up into a grid to simplify navigation.*
+```
+As a NASA controller,
+So that I can simplify navigation,
+I'd like to be able to divide the plateau into a grid.
 ```
 
 ##Author

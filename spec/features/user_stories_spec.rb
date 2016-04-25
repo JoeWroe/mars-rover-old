@@ -43,4 +43,15 @@ describe 'user stories' do
     mars_rover = MarsRover.new
     expect(controller.vehicle_position(mars_rover)).to eq('0 0 N')
   end
+
+  #USER STORY 5
+  # As a NASA controller,
+  # So that I can simplify navigation,
+  # I'd like to be able to divide the plateau into a grid.
+  it 'so a NASA controller can simplfy navigation, divide a plateau into a grid' do
+    controller = Controller.new
+    plateau    = Plateau.new
+    controller.add_navigation_grid(plateau, 5, 5)
+    expect(controller.check_location_bounds(plateau)).to eq("Maximum point on x-axis is 5,\nmaximum point on y-axis is 5.")
+  end
 end
