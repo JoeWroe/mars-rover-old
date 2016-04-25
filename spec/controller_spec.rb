@@ -46,4 +46,14 @@ describe Controller do
       expect(controller).to respond_to(:vehicle_position).with(1).argument
     end
   end
+
+  describe 'managing a navigation grid for a plateau' do
+    it 'can respond to #add_navigation_grid' do
+      expect(controller).to respond_to(:add_navigation_grid).with(3).arguments
+    end
+
+    it 'can check the maximum boundries of the grid' do
+      expect(controller).to respond_to(:check_location_bounds).with(1).argument
+    end
+  end
 end

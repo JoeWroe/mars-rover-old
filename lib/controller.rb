@@ -18,4 +18,10 @@ class Controller
     vehicle.current_position
   end
 
+  def add_navigation_grid(lacation, max_x_coordinate, max_y_coordinate)
+  end
+
+  def check_location_bounds(location)
+  end
+
 end
