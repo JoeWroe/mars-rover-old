@@ -22,6 +22,7 @@ class Controller
   end
 
   def check_location_bounds(location)
+    location.grid_size
   end
 
 end

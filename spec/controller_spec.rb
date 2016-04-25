@@ -53,7 +53,8 @@ describe Controller do
     end
 
     it 'can check the maximum boundries of the grid' do
-      expect(controller).to respond_to(:check_location_bounds).with(1).argument
+      plateau = Plateau.new
+      expect(controller.check_location_bounds(plateau)).to eq(plateau.grid_size)
     end
   end
 end

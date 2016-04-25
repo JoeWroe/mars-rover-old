@@ -13,4 +13,11 @@ describe Plateau do
       expect(plateau.number_of_landed_rovers).to eq(1)
     end
   end
+
+  describe 'navigational grid' do
+
+    it 'returns a grid size' do
+      expect(plateau.grid_size).to eq("Maximum point on x-axis is ,\nmaximum point on y-axis is .")
+    end
+  end
 end
