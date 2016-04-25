@@ -131,6 +131,19 @@ So that I can simplify navigation,
 I'd like to be able to divide the plateau into a grid.
 ```
 
+**User Story 6**
+*In order to control a rover, NASA sends a simple string of letters... ‘L’ and ‘R’ makes the rover spin 90 degrees left or right respectively, without moving from its current spot.*
+```
+As a NASA controller,
+So that I can change a rovers heading,
+I'd like to be able to spin a rover 90 degrees left and right.
+```
+
+**User Story 7**
+*In order to control a rover, NASA sends a simple string of letters... ‘M’ means move forward one grid point, and maintain the same heading.*
+```
+```
+
 ##Author
 
 [Joe Wroe](https://github.com/JoeWroe)

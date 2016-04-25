@@ -54,4 +54,15 @@ describe 'user stories' do
     controller.add_navigation_grid(plateau, 5, 5)
     expect(controller.check_location_bounds(plateau)).to eq("Maximum point on x-axis is 5.\nMaximum point on y-axis is 5.")
   end
+
+  #USER STORY 6
+  # As a NASA controller,
+  # So that I can change a rovers heading,
+  # I'd like to be able to spin a rover 90 degrees left and right.
+  it 'so a NASA controller can change a rovers heading, rotate left and right' do
+    controller = Controller.new
+    mars_rover = MarsRover.new
+    expect(controller.rotate_right).to eq('0 0 E')
+    expect(controller.rotate_left).to eq('0 0 N')
+  end
 end
