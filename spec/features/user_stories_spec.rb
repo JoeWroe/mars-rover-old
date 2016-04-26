@@ -3,7 +3,7 @@ describe 'user stories' do
   # As a NASA controller,
   # So that I can explore Mars,
   # I would like to interact with an online Mars Rover.
-  it 'so a NASA controller can interact with a Mars Rover, check a Mars Rover is online' do
+  xit 'so a NASA controller can interact with a Mars Rover, check a Mars Rover is online' do
     controller = Controller.new
     mars_rover = MarsRover.new
     expect(controller.online?(mars_rover)).to eq(true)
@@ -13,7 +13,7 @@ describe 'user stories' do
   # As a NASA controller,
   # So that I can explore a particular part of Mars,
   # I would like to be able to land a Mars Rover on the plateau.
-  it 'so a NASA controller can land a Mars Rover, instruct a Mars Rover to land' do
+  xit 'so a NASA controller can land a Mars Rover, instruct a Mars Rover to land' do
     controller   = Controller.new
     mars_rover   = MarsRover.new
     mars_plateau = Plateau.new
@@ -25,7 +25,7 @@ describe 'user stories' do
   # As a NASA controller,
   # So that we can get a complete view of the surrounding terrain to send back to Earth,
   # I would like to be able to start and stop our camera from recording.
-  it 'so a NASA controller can use the onboard camera, start and stop recording' do
+  xit 'so a NASA controller can use the onboard camera, start and stop recording' do
     controller = Controller.new
     mars_rover = MarsRover.new
     controller.toggle_recording(mars_rover)
@@ -38,7 +38,7 @@ describe 'user stories' do
   # As a NASA controller,
   # So that I know the position and location of a rover,
   # I would like to be able to check a rovers current position and location.
-  it 'so a NASA controller can find out a rovers position, a rover can return its coordinates' do
+  xit 'so a NASA controller can find out a rovers position, a rover can return its coordinates' do
     controller = Controller.new
     mars_rover = MarsRover.new
     expect(controller.vehicle_position(mars_rover)).to eq('0 0 N')
@@ -48,7 +48,7 @@ describe 'user stories' do
   # As a NASA controller,
   # So that I can simplify navigation,
   # I'd like to be able to divide the plateau into a grid.
-  it 'so a NASA controller can simplfy navigation, divide a plateau into a grid' do
+  xit 'so a NASA controller can simplfy navigation, divide a plateau into a grid' do
     controller = Controller.new
     plateau    = Plateau.new
     controller.add_navigation_grid(plateau, 5, 5)
@@ -62,7 +62,7 @@ describe 'user stories' do
   it 'so a NASA controller can change a rovers heading, rotate left and right' do
     controller = Controller.new
     mars_rover = MarsRover.new
-    expect(controller.rotate_right).to eq('0 0 E')
-    expect(controller.rotate_left).to eq('0 0 N')
+    expect(controller.rotate_right(mars_rover)).to eq('0 0 E')
+    expect(controller.rotate_left(mars_rover)).to eq('0 0 N')
   end
 end

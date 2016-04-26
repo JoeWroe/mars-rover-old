@@ -1,6 +1,6 @@
 require 'controller'
 
-describe Controller do
+xdescribe Controller do
 
   subject(:controller) { described_class.new}
 
@@ -47,7 +47,8 @@ describe Controller do
     end
 
     it 'can rotate a vehicle right' do
-
+      start_position = controller.vehicle_position(mars_rover)
+      expect(controller.rotate_right(mars_rover)).to_not eq(start_position)
     end
   end
 

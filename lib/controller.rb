@@ -14,9 +14,6 @@ class Controller
     vehicle.toggle_record
   end
 
-  def vehicle_position(vehicle)
-    vehicle.current_position
-  end
 
   def add_navigation_grid(location, x_axis_max, y_axis_max)
     location.add_navigation_grid(x_axis_max, y_axis_max)
@@ -26,4 +23,11 @@ class Controller
     location.grid_size
   end
 
+  def vehicle_position(vehicle)
+    vehicle.current_position
+  end
+
+  def rotate_right(vehicle)
+    vehicle_position(vehicle)
+  end
 end

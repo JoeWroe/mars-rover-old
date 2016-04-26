@@ -2,15 +2,16 @@ require_relative 'plateau'
 
 class MarsRover
 
-  attr_reader :online, :landed, :recording
+  attr_reader :online, :landed, :recording, :compass
   attr_accessor :x_coordinate, :y_coordinate, :heading
 
-  def initialize
+  def initialize(compass)
     @online       = true
     @landed       = false
     @recording    = false
     @x_coordinate = 0
     @y_coordinate = 0
+    @compass      = compass
     @heading      = 'N'
   end
 
@@ -25,6 +26,12 @@ class MarsRover
 
   def current_position
     "#{x_coordinate} #{y_coordinate} #{heading}"
+  end
+
+  def directions
+    compass.map do |direction|
+      "#{direction}"
+    end.join(", ")
   end
 
   private
